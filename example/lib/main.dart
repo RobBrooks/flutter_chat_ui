@@ -226,7 +226,8 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) => Scaffold(
         body: Chat(
           messages: _messages,
-          onAttachmentPressed: _handleAttachmentPressed,
+          onAttachmentPressed:
+              _handleImageSelection, // _handleAttachmentPressed,
           onMessageTap: _handleMessageTap,
           onPreviewDataFetched: _handlePreviewDataFetched,
           onSendPressed: _handleSendPressed,
